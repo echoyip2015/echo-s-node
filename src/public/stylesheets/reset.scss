@@ -1,0 +1,45 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-size: 12px;
+	font-family: 'Microsoft yahei', 'simsun';
+	color: #666;
+	-webkit-text-size-adjust: none;
+	background: #fff
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+fieldset, img {
+	border: 0
+}
+input, textarea, button {
+	font-family: 'Microsoft yahei', 'simsun';
+	font-size: 12px;
+	outline: none;
+	padding: 0;
+	margin: 0
+}
+button:focus, button:active {
+	outline: none
+}
+address, caption, cite, code, dfn, em, strong, th, var, i {
+	font-style: normal;
+	font-weight: normal
+}
+ol, ul, li {
+	list-style: none
+}
+caption, th {
+	text-align: left
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+addr, acronym {
+	border: 0
+}
