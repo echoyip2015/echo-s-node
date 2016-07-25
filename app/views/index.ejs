@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BT磁力</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- <p><%= data.status %></p> -->
+    <!-- header -->
+	<% include common/header %>
+	<!-- header -->
+
+	<!-- container -->
+	<div class="container">
+		<div class="row logo">BT磁力</div>
+		<!-- search -->
+		<% include common/search_module %>
+		<!-- search -->
+		<div class="row movielist clearfix">
+			<% for(var i=0; i<data.data[0].disp_data.length; i++) {%>
+			<div class="item fl">
+				<a href="/search/<%= data.data[0].disp_data[i].ename %>" target="_blank" class="pic" title="<%= data.data[0].disp_data[i].ename %>"><img src="<%= data.data[0].disp_data[i].pic_6n_161 %>" alt="<%= data.data[0].disp_data[i].ename %>"></a>
+				<a href="/search/<%= data.data[0].disp_data[i].ename %>" target="_blank" class="ename" title="<%= data.data[0].disp_data[i].ename %>"><%= data.data[0].disp_data[i].ename %></a>
+				<span class="additional"><%= data.data[0].disp_data[i].additional %></span>
+			</div>
+			<% } %>
+		</div>
+	</div>
+	<!-- container -->
+
+	<!-- footer -->
+	<% include common/footer %>
+	<!-- footer -->
+  </body>
+</html>
